@@ -71,7 +71,7 @@ defmodule Dump do
     case data do
       <<>> -> :ok
       <<x :: integer>> -> "0#{Integer.to_string(x, 16)}" |> last2  
-      <<x :: integer, y :: binary>> -> dump_d(<<x>>) <> " " <> dump_d(y)
+      <<x :: integer, y :: binary>> -> "#{dump_d(<<x>>)} #{dump_d(y)}"
     end
   end
 
