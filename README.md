@@ -1,6 +1,6 @@
 # Dump
 
-**TODO: Add description**
+Dump binary files to standard output.
 
 ## Installation
 
